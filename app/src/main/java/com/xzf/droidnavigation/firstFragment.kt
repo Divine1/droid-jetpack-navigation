@@ -43,7 +43,9 @@ class firstFragment : Fragment() {
         val textviewid1 = view.findViewById<TextView>(R.id.textviewid1);
         textviewid1.setOnClickListener{
             Log.d("appcode","textviewid1 frag1 clicked")
-            Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment);
+
+            val action = firstFragmentDirections.actionFirstFragmentToSecondFragment(234,5600);
+            Navigation.findNavController(view).navigate(action);
         }
         return view;
     }

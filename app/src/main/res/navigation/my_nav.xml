@@ -26,5 +26,13 @@
             app:destination="@id/firstFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="userid"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="city"
+            app:argType="integer"
+            android:defaultValue="100" />
     </fragment>
 </navigation>
